@@ -1,4 +1,12 @@
-/* Reset básico */
+/* Paleta de cores */
+:root {
+  --cyan: #00bcd4;
+  --cyan-light: rgba(0, 188, 212, 0.1);
+  --dark: #0d0d0d;
+  --gray: #555;
+  --white: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,99 +15,113 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background: #f5f7f8;
+  color: var(--dark);
   line-height: 1.6;
 }
 
-/* Cabeçalho */
-header {
-  background: linear-gradient(135deg, #6fafaf, #96cbc9);
-  color: white;
-  padding: 60px 20px;
+/* Header Hero */
+.hero {
+  background-color: var(--cyan);
+  color: var(--white);
+  padding: 100px 20px;
   text-align: center;
 }
 
-header h1 {
+.hero h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-header p {
+.hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-.btn-agenda {
+.btn {
   display: inline-block;
-  background: #ffffff;
-  color: #2a4d59;
+  background-color: var(--white);
+  color: var(--cyan);
   padding: 12px 30px;
-  border-radius: 50px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-.btn-agenda:hover {
-  background: #dceef0;
+.btn:hover {
+  background-color: var(--cyan-light);
+  color: var(--dark);
 }
 
-/* Seções */
+/* Sections */
 section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 40px 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+  padding: 60px 20px;
 }
 
-section h2 {
-  color: #2a4d59;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
   font-size: 2rem;
+  color: var(--cyan);
   margin-bottom: 20px;
-  text-align: center;
 }
 
-section p {
+.about p, .how-it-works p {
   font-size: 1.1rem;
-  text-align: justify;
+  color: var(--gray);
 }
 
-/* Serviços */
-#servicos .servico-bloco {
-  margin-bottom: 20px;
-  padding: 20px;
-  background: #f0fcfc;
-  border-left: 5px solid #6fafaf;
+.services ul {
+  list-style: none;
+}
+
+.services li {
+  background-color: var(--cyan-light);
+  margin-bottom: 10px;
+  padding: 15px;
   border-radius: 8px;
+  font-weight: bold;
+  color: var(--dark);
 }
 
-/* Contato */
-#contato a {
-  color: #2a4d59;
+/* Contact */
+.contact a {
+  color: var(--cyan);
   text-decoration: none;
   font-weight: bold;
 }
 
-#contato a:hover {
+.contact a:hover {
   text-decoration: underline;
 }
 
-/* Rodapé */
+/* Footer */
 footer {
+  background-color: var(--dark);
+  color: var(--white);
   text-align: center;
-  padding: 20px;
-  background: #e8f1f1;
-  font-size: 0.9rem;
+  padding: 30px 20px;
 }
 
 footer a {
-  color: #2a4d59;
+  color: var(--cyan);
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }
