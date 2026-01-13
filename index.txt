@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Psicólogo(a) – Atendimento Online e Presencial</title>
+  <meta name="description" content="Atendimento psicológico online e presencial. Psicoterapia com ética, sigilo e acolhimento.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Dr(a). Seu Nome</h1>
+  <p>Psicólogo(a) – CRP 00/00000</p>
+  <a href="#contato" class="botao">Agendar consulta</a>
+</header>
+
+<section>
+  <h2>Sobre</h2>
+  <p>Sou psicólogo(a) formado(a), com atuação em psicoterapia e compromisso com o cuidado emocional, ética e sigilo profissional.</p>
+</section>
+
+<section>
+  <h2>Atendimentos</h2>
+  <ul>
+    <li>Psicoterapia individual</li>
+    <li>Atendimento online</li>
+    <li>Orientação emocional</li>
+  </ul>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p>WhatsApp: (00) 00000-0000</p>
+  <p>Email: contato@email.com</p>
+</section>
+
+<footer>
+  <p>© 2026 – Dr(a). Seu Nome</p>
+</footer>
+
+</body>
+</html>
